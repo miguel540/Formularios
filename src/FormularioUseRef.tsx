@@ -10,7 +10,7 @@ import { IUsuario } from './interfaces/usuario.interface';
 export const FormularioUseRef = () => {
   // Tomamos dos referencias, una por cada input. El null final es para dar un valor inicial. Si no ponemos este null, da error de compilación
   // No es el valor inicial del valor del input, sino del input, por eso no ponemos en el valor inicial ''
-  const emailRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);// useRef -> hay que tipar lo que queremos vigilar en este caso un input de html
   const passwordRef = useRef<HTMLInputElement>(null);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
